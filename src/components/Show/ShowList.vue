@@ -8,7 +8,7 @@ const props = defineProps<{ shows: any[] }>()
   <div class="show-list">
     <slot></slot>
 
-    <div class="shows grid grid-cols-5 gap-8" data-test="items">
+    <div class="shows grid md:grid-cols-3 lg:grid-cols-5 gap-8" data-test="items">
       <ShowItem
         v-for="item in props.shows"
         :key="item.id"
