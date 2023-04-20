@@ -3,6 +3,7 @@ import { onMounted, reactive } from 'vue';
 import { store } from '../services/store'
 import ShowList from '../components/Show/ShowList.vue'
 import LoadingIndicator from '../components/LoadingIndicator/LoadingIndicator.vue';
+import SearchShows from '../components/Search/SearchShows.vue';
 
 interface IState {
   isLoading: boolean
@@ -24,7 +25,10 @@ onMounted(async () => {
 </script>
 
 <template>
+  <SearchShows/>
+
   <LoadingIndicator v-if="state.isLoading" />
+
   <ShowList :shows="state.topRatedShows" v-else>
     <h1 class="font-bold mb-8">Top Rated Shows</h1>
   </ShowList>
