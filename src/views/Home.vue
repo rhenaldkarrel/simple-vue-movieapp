@@ -30,6 +30,6 @@ onMounted(async () => {
   <LoadingIndicator v-if="state.isLoading" />
 
   <ShowList :shows="state.topRatedShows" v-else>
-    <h1 class="font-bold mb-8">Top Rated Shows</h1>
+    <h1 class="font-bold mb-8">Top Rated Shows ⭐</h1>
   </ShowList>
 </template>

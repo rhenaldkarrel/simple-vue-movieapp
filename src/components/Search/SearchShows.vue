@@ -47,7 +47,7 @@ watch(
       class="search-results"
       :shows="state.shows"
     >
-      <h1 class="font-bold mb-8">Search Results</h1>
+      <h1 class="font-bold mb-8">Search Results 🔍</h1>
     </ShowList>
   </div>
 </template>
