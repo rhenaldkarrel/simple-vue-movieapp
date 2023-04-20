@@ -37,7 +37,7 @@ watch(
         <input v-model="state.query" type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 outline-none" placeholder="Search shows...">
     </div>
 
-    <div class="loading" v-show="state.isLoading">
+    <div class="loading mt-8" v-show="state.isLoading">
       <LoadingIndicator />
     </div>
 
