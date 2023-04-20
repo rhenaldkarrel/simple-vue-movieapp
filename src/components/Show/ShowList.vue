@@ -14,9 +14,9 @@ const props = defineProps<{ shows: any[] }>()
         :key="item.id"
         :id="item.id"
         :name="item.name"
-        :image="item.image?.medium"
+        :image="item.image?.medium || '/cover-default.jpg'"
         :genres="item.genres"
-        :rating="item.rating.average"
+        :rating="item.rating.average || 0"
         :url="item.url"
       />
     </div>
