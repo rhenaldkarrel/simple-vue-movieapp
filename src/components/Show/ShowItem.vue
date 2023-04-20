@@ -4,12 +4,13 @@ const props = defineProps<{
   name: string,
   image: string,
   rating: number,
-  genres: string[]
+  genres: string[],
+  url: string,
 }>()
 </script>
 
 <template>
-  <RouterLink :to="`/shows/${props.id}`">
+  <a :href="props.url" target="_blank">
     <img :src="props.image" :alt="props.name" class="aspect-auto w-full object-cover rounded-lg mb-2">
     <div class="space-y-1">
       <div class="flex justify-between">
@@ -21,5 +22,5 @@ const props = defineProps<{
       </div>
       <p class="text-sm">{{ props.genres.join(', ') }}</p>
     </div>
-  </RouterLink>
+  </a>
 </template>

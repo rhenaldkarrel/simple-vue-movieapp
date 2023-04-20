@@ -17,6 +17,7 @@ const props = defineProps<{ shows: any[] }>()
         :image="item.image?.medium"
         :genres="item.genres"
         :rating="item.rating.average"
+        :url="item.url"
       />
     </div>
   </div>
