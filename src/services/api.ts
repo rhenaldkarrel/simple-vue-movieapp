@@ -23,5 +23,5 @@ export async function searchShows(q: string) {
     }
   })
 
-  return response.data
+  return response.data.map((data: any) => data.show)
 }
