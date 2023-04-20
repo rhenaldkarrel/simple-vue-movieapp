@@ -23,7 +23,7 @@ watch(
     state.isLoading = true
     state.shows = await api.searchShows(newQuery)
     state.isLoading = false
-  }, 250)
+  }, 500)
 )
 </script>
 <template>
